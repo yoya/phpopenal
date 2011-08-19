@@ -814,15 +814,19 @@ zend_function_entry openal_functions[] = {
 };
 
 zend_module_entry openal_module_entry = {
+#if ZEND_MODULE_API_NO >= 20010901
 	STANDARD_MODULE_HEADER,
-	"openal",
+#endif
+	"OpenAL functions",
 	openal_functions,
 	PHP_MINIT(openal),
 	NULL, /* MSHUTOWN */
 	NULL, /* RINIT */
 	NULL, /* RSHUTDOWN */
 	PHP_MINFO(openal),
+#if ZEND_MODULE_API_NO >= 20010901
 	PHP_OPENAL_VERSION,
+#endif
 	STANDARD_MODULE_PROPERTIES
 };
 
