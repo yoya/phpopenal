@@ -1,3 +1,4 @@
+
 // $Id:$
 // vim:ft=javascript
 
@@ -14,7 +15,6 @@ if (PHP_OPENAL == "yes") {
 /D HAVE_AL_AL_H \
 /D HAVE_AL_ALC_H  \
 /D HAVE_AL_ALUT_H \
-/D HAVE_AL_ALEXT_H \
 /D HAVE_OPENAL_LOADWAV \
 		");
 	PHP_INSTALL_HEADERS("ext/openal/", "php_openal.h");
