@@ -10,6 +10,8 @@ if (PHP_OPENAL == "yes") {
 	ADD_FLAG("CFLAGS_OPENAL", " \
 /D MSWIN32 \
 /D WITH_OPENAL \
+/D HAVE_AL_AL_H \
+/D HAVE_AL_ALC_H  \
 		");
 	PHP_INSTALL_HEADERS("ext/openal/", "php_openal.h");
 }
