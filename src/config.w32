@@ -4,12 +4,12 @@
 ARG_ENABLE("openal", "OpenAL support", "yes,shared");
 
 if (PHP_OPENAL == "yes") {
-	CHECK_LIB("alut.lib", "openal", PHP_OPENAL);
+	CHECK_LIB("openal32.lib", "openal", PHP_OPENAL);
 	EXTENSION("openal", "php_openal.c", null, "-Iext/openal/libopenal", "php_openal.dll");
 	AC_DEFINE("HAVE_PHP_OPENAL", 1, "OpenAL support");
 	ADD_FLAG("CFLAGS_OPENAL", " \
 /D MSWIN32 \
-/MD \
+/D WITH_OPENAL \
 		");
 	PHP_INSTALL_HEADERS("ext/openal/", "php_openal.h");
 }
