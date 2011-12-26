@@ -26,8 +26,13 @@
 
 #if WITH_OPENAL
 
+#if defined(_MSC_VER)
+#include <al.h>
+#include <alc.h>
+#else
 #include <AL/al.h>
 #include <AL/alc.h>
+#endif
 
 #ifdef HAVE_AL_ALUT_H
 #include <AL/alut.h>
