@@ -48,8 +48,7 @@ class SoundGenerator {
         } else {
             $tone_hz = $this->tone_list[$tone];
         }
-//        $amp = 127;
-        $amp = 50;
+        $amp = 100; // max:127
         $data = '';
         for ($i = 0 ; $i < $this->freq * $period ; $i++) {
             $value = sin(2 * M_PI * $tone_hz * $i / $this->freq) * $amp + 127;

@@ -23,7 +23,7 @@ $time = $period * count($tone_list);
 $data = '';
 
 foreach ($tone_list as $tone) {
-    $amp = 127;
+    $amp = 100; // max:127
     for ($i = 0 ; $i < $freq * $period ; $i++) {
         $value = sin(2 * M_PI * $tone * $i / $freq) * $amp + 127;
         $data .= chr($value);

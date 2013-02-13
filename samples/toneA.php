@@ -4,7 +4,7 @@
 $freq = 8000; // [Hz] telephone sound quality
 $toneA = 440;  // [Hz] time signal sound
 $period = 3;   // [sec] sound length
-$amp = 60; // max 127
+$amp = 100; // max 127
  
 $data = '';
 $theta = 2 * M_PI * $toneA / $freq;
