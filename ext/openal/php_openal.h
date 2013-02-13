@@ -42,7 +42,7 @@
 #include <AL/alext.h>
 #endif
 
-#define PHP_OPENAL_VERSION          "0.3.0y1"
+#define PHP_OPENAL_VERSION          "0.3.0y2"
 
 #define PHP_OPENAL_RES_DEVICE       "Open AL(Device)"
 #define PHP_OPENAL_RES_CONTEXT      "Open AL(Context)"
